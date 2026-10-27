@@ -1,0 +1,12 @@
+# zpizzatpa - autores: Zynyhero, Claude
+# Los textos están en messages.yml
+
+# Segundos que dura una solicitud antes de expirar
+request-timeout-seconds: 60
+
+# Jugadores por página en el menú. Si hay más, aparece la fila de navegación (← Página x/y →)
+players-per-page: 9
+
+# Prefijo que se quita del nick en los menús (por ejemplo el de Floodgate para Bedrock).
+# Déjalo vacío ("") para no quitar nada.
+strip-prefix: "."

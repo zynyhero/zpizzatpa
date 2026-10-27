@@ -1,0 +1,58 @@
+# zpizzatpa - mensajes (formato MiniMessage: https://docs.advntr.dev/minimessage/format.html)
+# Recarga con /zpizzatpa reload
+
+# --- Menús ---
+menu-title: "Selecciona al jugador para mandar una solicitud de teletransporte"
+confirm-title: "¿Estás seguro de mandar una solicitud?"
+confirm-body: "<gray>Jugador: <white><player>"
+button-confirm: "<green>Aceptar"
+button-cancel: "<red>Cancelar"
+
+# --- Paginación (<page> = página actual, <pages> = última página) ---
+page-prev: "<white>←"
+page-next: "<white>→"
+page-indicator: "<white>Página <page>/<pages>"
+
+# --- Búsqueda (solo aparece cuando hay más jugadores que players-per-page) ---
+search-label: "<white>Buscar jugador"
+search-button: "<white>Buscar"
+search-clear: "<red>Limpiar"
+search-active: "<gray>Filtro: <white><query>"
+search-no-results: "<red>No se encontró ningún jugador con ese nombre."
+
+# --- Chat del receptor ---
+received-tpa: "<gold><player> quiere teletransportarse a tu ubicación."
+received-tpahere: "<gold><player> quiere que te teletransportes a su ubicación."
+received-tpaall: "<gold><player> ha pedido que todos los jugadores se teletransporten a su ubicación."
+button-accept-chat: "<green><bold>ACEPTAR"
+button-deny-chat: "<red><bold>RECHAZAR"
+button-separator: " "
+# Para jugadores de Bedrock (no pueden pulsar el chat): se muestran los comandos
+bedrock-accept: "<green>/tpaccept <player>"
+bedrock-deny: "<red>/tpdeny <player>"
+hover-accept: "<green>Clic para aceptar la solicitud"
+hover-deny: "<red>Clic para rechazar la solicitud"
+expires-note: " <gray>(expira en <seconds>s)"
+
+# --- Respuestas ---
+sent: "<gold>Solicitud enviada a <white><player><gold>. <gray>Usa /tpcancel para cancelarla."
+accepted-target: "<green>Has aceptado la solicitud de <white><player><green>."
+accepted-sender: "<white><player><green> ha aceptado tu solicitud."
+denied-target: "<red>Has rechazado la solicitud de <white><player><red>."
+denied-sender: "<white><player><red> ha rechazado tu solicitud."
+cancelled-sender: "<gold>Has cancelado <white><count><gold> solicitud(es)."
+cancelled-target: "<gray><player> ha cancelado su solicitud de teletransporte."
+no-outgoing: "<red>No tienes solicitudes enviadas."
+no-pending: "<red>No tienes solicitudes pendientes."
+sender-offline: "<red>El jugador que envió la solicitud ya no está conectado."
+offline: "<red>Ese jugador no está conectado."
+self: "<red>No puedes enviarte una solicitud a ti mismo."
+no-players: "<red>No hay otros jugadores conectados."
+
+# --- Admin ---
+tpall-done: "<gold>Has teletransportado a <white><count><gold> jugador(es) a tu ubicación."
+tpaall-done: "<gold>Solicitud enviada a <white><count><gold> jugador(es)."
+reloaded: "<green>Configuración y mensajes de zpizzatpa recargados."
+usage-admin: "<red>Uso: /zpizzatpa reload"
+no-permission: "<red>No tienes permiso para hacer eso."
+only-players: "<red>Este comando solo lo pueden usar jugadores."

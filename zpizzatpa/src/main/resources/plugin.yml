@@ -1,0 +1,64 @@
+name: zpizzatpa
+version: 1.3.0
+main: com.zynyhero.zpizzatpa.ZpizzaTPA
+api-version: "1.21"
+authors: [Zynyhero, Claude]
+description: tpa plugins with dialog gui
+softdepend: [LuckPerms, floodgate]
+folia-supported: true
+
+# Los comandos (/tpa, /tpask, /tpahere, /tpaccept, /tpdeny, /tpcancel, /tpall, /tpaall, /zpizzatpa)
+# se registran por código con Brigadier, por eso no aparecen aquí.
+
+# Todos los nodos están declarados aquí, así que LuckPerms los detecta solos (autocompletado en /lp).
+permissions:
+  zpizzatpa.*:
+    description: Todos los permisos de zpizzatpa
+    default: op
+    children:
+      zpizzatpa.use: true
+      zpizzatpa.admin: true
+  zpizzatpa.use:
+    description: Comandos de jugador (/tpa, /tpahere, /tpaccept, /tpdeny, /tpcancel)
+    default: true
+    children:
+      zpizzatpa.tpa: true
+      zpizzatpa.tpahere: true
+      zpizzatpa.tpaccept: true
+      zpizzatpa.tpdeny: true
+      zpizzatpa.tpcancel: true
+  zpizzatpa.admin:
+    description: Comandos de admin (/tpall, /tpaall, /zpizzatpa reload) y ver vanish
+    default: op
+    children:
+      zpizzatpa.tpall: true
+      zpizzatpa.tpaall: true
+      zpizzatpa.reload: true
+      zpizzatpa.seevanished: true
+  zpizzatpa.seevanished:
+    description: Ver y elegir a jugadores en vanish en los menús de TPA
+    default: false
+  zpizzatpa.tpa:
+    description: /tpa
+    default: false
+  zpizzatpa.tpahere:
+    description: /tpahere
+    default: false
+  zpizzatpa.tpaccept:
+    description: /tpaccept
+    default: false
+  zpizzatpa.tpdeny:
+    description: /tpdeny
+    default: false
+  zpizzatpa.tpcancel:
+    description: /tpcancel
+    default: false
+  zpizzatpa.tpall:
+    description: /tpall
+    default: false
+  zpizzatpa.tpaall:
+    description: /tpaall
+    default: false
+  zpizzatpa.reload:
+    description: /zpizzatpa reload
+    default: false
