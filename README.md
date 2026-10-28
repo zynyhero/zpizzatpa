@@ -11,7 +11,6 @@
 - **Native dialog menus** – no inventory GUIs. `/tpa` and `/tpahere` open a player picker.
 - **Player faces** next to each nickname (Minecraft 1.21.9+), without rank prefixes. Buttons grow wider for long nicknames.
 - **Confirmation screen** before sending a request, with green *Accept* and red *Cancel* buttons side by side.
-- **Pagination and search** – when there are more players than fit on one page, a navigation row (`←  Page x/y  →`) and a search bar appear.
 - **Clickable chat requests** – the receiver gets a gold message with bold `ACCEPT` / `DENY` buttons they can click.
 - **Bedrock support** – Bedrock players (Geyser/Floodgate) can't click chat buttons, so they see `/tpaccept <player>` and `/tpdeny <player>` instead. Detected through Floodgate, or by UUID/prefix as a fallback.
 - **Vanish aware** – vanished players are hidden from the menu, tab completion, direct requests, `/tpall` and `/tpaall` (EssentialsX, SuperVanish, PremiumVanish and anything using `hidePlayer`).
